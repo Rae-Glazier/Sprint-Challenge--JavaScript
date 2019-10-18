@@ -23,12 +23,12 @@
 
 
 function cuboidMaker(attributes){
-    this.name = attributes.name,
-    this.species = attributes.species, 
-    this.phrase = attributes.phrase  
+    this.cubeLength = attributes.cubeLength,
+    this.width = attributes.width, 
+    this.height = attributes.height  
   }
   
-  cuboidMaker.protoype.volume = function(){
+  cuboidMaker.prototype.volume = function(){
     return this.cubeLength * this.width * this.height;
   }
 
