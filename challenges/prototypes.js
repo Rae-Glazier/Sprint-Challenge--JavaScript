@@ -6,20 +6,35 @@
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
 
-class CuboidMaker{
-  constructor(attributes){
-    this.cubeLength = attributes.cubeLength,
-    this.width = attributes.width,
-    this.height = attributes.height
+// class CuboidMaker{
+//   constructor(attributes){
+//     this.cubeLength = attributes.cubeLength,
+//     this.width = attributes.width,
+//     this.height = attributes.height
+//   }
+//   volume() {
+//     return this.cubeLength * this.width * this.height;
+//   }
+
+//   surfaceArea() {
+//     return 2 * (this.cubeLength * this.width + this.cubeLength * this.height + this.width * this.height);
+//   }
+// }
+
+
+function cuboidMaker(attributes){
+    this.name = attributes.name,
+    this.species = attributes.species, 
+    this.phrase = attributes.phrase  
   }
-  volume() {
+  
+  cuboidMaker.protoype.volume = function(){
     return this.cubeLength * this.width * this.height;
   }
 
-  surfaceArea() {
+  cuboidMaker.prototype.surfaceArea = function(){
     return 2 * (this.cubeLength * this.width + this.cubeLength * this.height + this.width * this.height);
   }
-}
 
 
 /* == Step 2: Volume Method ==
@@ -45,7 +60,7 @@ class CuboidMaker{
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
 
-const cuboid = new CuboidMaker({
+const cuboid = new cuboidMaker({
   cubeLength: 4,
   width: 5,
   height: 5,
