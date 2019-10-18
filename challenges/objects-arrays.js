@@ -11,7 +11,19 @@ const trex = {
   diet: 'Carnivorous',
   weight: '7000kg',
   length: '12m',
-  period: 'Late Cretaceous'
+  period: 'Late Cretaceous',
+
+  heavy: function(){
+    console.log(`The ${this.name} weighed ${this.weight}!`)
+  },
+
+  era: function(){
+    console.log(`The ${this.name} lived during the ${this.period}!!`)
+  },
+
+  roar: function(){
+    console.log(`The ${this.name} says RAWERSRARARWERSARARARRRR! 🐱‍🐉`)
+  }
 }
 
 const steg = {
@@ -19,7 +31,11 @@ const steg = {
   diet: 'Herbivorous',
   weight: '2000kg',
   length: '9m',
-  period: 'Late Jurassic'
+  period: 'Late Jurassic',
+
+  big: function(){
+    console.log(`The ${this.name} was ${this.length}!!`)
+  }
 }
 
 const raptor = {
@@ -27,7 +43,11 @@ const raptor = {
   diet: 'Carnivorous',
   weight: '15kg',
   length: '1.8m',
-  period: 'Late Cretaceous'
+  period: 'Late Cretaceous',
+
+  eat: function(){
+    console.log(`The ${this.name} was ${this.diet}!!`)
+  }
 }
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
@@ -39,20 +59,25 @@ const raptor = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+// console.log(trex.heavy());
+trex.heavy();
 
 // What was the diet of a velociraptor?
-console.log();
+// console.log(raptor.eat());
+raptor.eat();
 
 // How long was a stegosaurus?
-console.log();
+// console.log(steg.big());
+steg.big();
 
 // What time period did tyrannosaurus live in?
-console.log();
+// console.log(trex.era());
+trex.era();
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+// console.log(trex.roar());
+trex.roar();
 
 
 // ==== Arrays ====
