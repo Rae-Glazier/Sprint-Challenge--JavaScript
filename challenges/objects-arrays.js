@@ -6,6 +6,30 @@
   object name, diet, weight, length, period
 */
 
+const trex = {
+  name: 'Tyrannosaurus',
+  diet: 'Carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceous'
+}
+
+const steg = {
+  name: 'Stegosaurus',
+  diet: 'Herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic'
+}
+
+const raptor = {
+  name: 'Velociraptor',
+  diet: 'Carnivorous',
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceous'
+}
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
